@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(/assets/font/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-SemiBold";
+    src: url(/assets/font/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url(/assets/font/Poppins-Bold.ttf);
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+header{
+    background-image: radial-gradient(rgb(139, 195, 245), #1294b8);
+    width: 100%;
+    min-height: 100vh; /* 100% of the viewport height */ 
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 25px;
+}
+
+#logo{
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins-Bold";
+    font-size: 30px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;   
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.4s ease-in-out;
+}
+
+li a:hover{
+    color: rgb(173, 225, 235);
+}
+
+/*
+.icone {
+    color: white;  Couleur par défaut des icônes 
+    transition: color 0.4s ease-in-out;  Ajout d'une transition pour l'effet hover 
+}
+
+.icone:hover {
+    color: rgb(202, 202, 202); Couleur au survol 
+}
+*/
+
+#reseaux, ul{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.infos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin: 60px 200px;
+}
+
+.title{
+    font-family: "Poppins-Bold";
+    font-size: 50px;
+    color: rgb(46, 46, 46);
+}
+
+.Kucra-Agency{
+    width: 38%;
+    margin-right: 30px;
+}
+
+.Kucra-Agency-img{
+    width: 52%;
+    margin-left: 30px;
+}
+
+form {
+    display: flex;
+    background-color: white;
+    border-radius: 25px;
+    padding: 5px;
+    max-width: 400px; /* Largeur maximale du formulaire */
+    min-width: 300px;
+    width: 100%; /* Prend toute la largeur disponible */
+}
+
+.name-email{
+    padding: 8px;
+    border-radius: 25px;
+    border: none;
+    flex-grow: 1; /* Permet à l'input d'utiliser l'espace restant */
+    margin-right: 10px; /* Espace entre l'input et le bouton */
+}
+
+.submit-email{
+    padding: 8px 15px;
+    color: white;
+    background-color: #1294b8;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: ease-in-out 0.6s;
+}
+
+.submit-email:hover{
+    background-color: #68deff;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+.products-features{
+    background-color: white;
+    width: 100%;
+    min-height: 100vh; /* 100% of the viewport height */ 
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 100px 0 0 0;
+}
+
+.products-features h2{
+    font-family: "Poppins-SemiBold";
+    font-size: 35px;
+}
+
+.products-features p{
+    color: rgb(170, 170, 170);
+    padding: 15px 0 40px 0;
+}
+
+.cards-pf{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card-pf{
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: radial-gradient(rgb(139, 195, 245), #1294b8);
+    color: white;
+    border-radius: 15px;
+    width: 400px;
+    padding: 60px 35px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    transition: transform 0.4s ease; /* Ajout d'une animation de transformation */
+}
+
+.card-pf h3{
+    padding: 30px 0 5px 0;
+    font-size: 24px;
+}
+
+.card-pf p{
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+.card-pf:hover{
+    transform: translateY(-10px); /* Animation vers le haut */
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+
+.how-it-works{
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    min-height: 100vh; /* 100% of the viewport height */ 
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 100px 0 0 0;
+}
+
+.how-it-works h2{
+    font-family: "Poppins-SemiBold";
+    font-size: 35px;
+}
+
+.how-it-works p{
+    color: rgb(170, 170, 170);
+    padding: 15px 0 40px 0;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+
+.team{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    min-height: 100vh; /* 100% of the viewport height */ 
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 80px 0 50px 0;
+}
+
+.team h2{
+    font-family: "Poppins-SemiBold";
+    font-size: 30px;
+    margin: 0 400px;
+    text-align: center;
+}
+
+.team p{
+    color: rgb(170, 170, 170);
+    padding: 15px 0 40px 0;
+    margin: 0 440px;
+    text-align: center;
+}
+
+.card-t h3{
+    font-size: 25px;
+}
+
+.cards-t p{
+    font-size: small;
+    margin: 0;
+    padding: 0;
+}
+
+.img-person {
+    width: 200px; /* Largeur du cercle */
+    height: 200px; /* Hauteur du cercle */
+    border-radius: 50%; /* Cercle parfait */
+    overflow: hidden; /* Cache les débordements */
+    position: relative; /* Nécessaire pour positionner l'image */
+    display: flex; /* Centrer l'image */
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    margin: 30px 0 10px 0;
+}
+
+.img-person:hover .reseaux-team {
+    opacity: 1; /* Les icônes deviennent visibles lors du survol */
+    transform: translate(-70px); 
+}
+
+.img-person img {
+    width: 100%; /* Assure que l'image prend toute la largeur */
+    height: 100%; /* Assure que l'image prend toute la hauteur */
+    object-fit: cover; /* Couvre entièrement le cercle sans déformation */
+    transition: transform 0.4s, filter 0.5s; /* Transition pour le zoom et le filtre*/
+    filter: grayscale(100%);
+}
+
+.img-person:hover img {
+    filter: grayscale(0%); 
+    transform: scale(1.1); /* Zoom à 110% */
+}
+
+.cards-t{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.card-t{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 15px;
+    width: 250px;
+    padding: 60px 35px;
+}
+
+.reseaux-team{
+    display: flex;
+    flex-direction: column;
+    transform: translate(-150px, -150px);
+    position: absolute; /* Positionne les icônes par rapport à l'image */
+
+    opacity: 0; /* Icônes invisibles par défaut */
+    transition: opacity 0.4s ease, transform 0.4s ease; /* Transition pour les icônes */
+    gap: 10px; /* Espace entre les icônes */
+}
+
+.icon-reseau {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 245, 245); 
+    border-radius: 50%;
+    padding: 5px;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+
+
+.get-started{
+    position: relative; /* Nécessaire pour positionner le pseudo-élément */
+    background-image: url(/assets/img/parallax.png);
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*min-height: 100vh;  100% of the viewport height */ 
+}
+
+.get-started::before {
+    content: ""; /* Nécessaire pour que le pseudo-élément soit affiché. Même si nous n'ajoutons aucun contenu textuel, il doit exister pour pouvoir appliquer des styles. */
+    position: absolute; /* Positionne le pseudo-élément */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Couleur noire avec 50% d'opacité */
+    z-index: 1; /* Mettre le pseudo-élément derrière le contenu */
+}
+
+.text-get-started{
+    position: relative; /* Nécessaire pour s'assurer que le texte est au-dessus de l'overlay */
+    z-index: 2; /* Met le texte au-dessus du pseudo-élément */
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 150px 0;
+    margin: 0 240px;
+    text-align: center;
+}
+
+.text-get-started p{
+    padding: 20px 0 40px;
+    color: rgba(214, 214, 214, 0.774);
+}
+
+.text-get-started button{
+    padding: 10px 35px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: #ffffff;
+    border-width: 2px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.6s ease-in-out, background-color 0.6s ease-in-out; /* Ajout d'une animation de transformation */
+}
+
+.text-get-started button:hover{
+    transform: translateY(-5px); /* Animation vers le haut */
+    background-color: white;
+    color: rgb(48, 48, 48);
+}
+
